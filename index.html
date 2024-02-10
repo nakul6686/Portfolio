@@ -1,0 +1,570 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolios</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="./assets/index.css" />
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+      integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+      integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://kit.fontawesome.com/ece8e2b62e.js"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"
+    ></script>
+    <script type="text/javascript">
+      (function () {
+        // https://dashboard.emailjs.com/admin/account
+        emailjs.init({
+          publicKey: "aELidXTu3inR92m1L",
+        });
+      })();
+    </script>
+    <script type="text/javascript"></script>
+  </head>
+
+  <body>
+    <div class="root" id="home">
+      <header class="sticky-top">
+        <div class="container">
+          <div class="row">
+            <div class="col-sm-12">
+              <nav class="navbar navbar-expand-lg" data-bs-theme="dark">
+                <div class="container-fluid">
+                  <a class="navbar-brand logo-text" href="#">Hello Dev </a>
+                  <button
+                    class="navbar-toggler"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent"
+                    aria-controls="navbarSupportedContent"
+                    aria-expanded="false"
+                    aria-label="Toggle navigation"
+                  >
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+                  <div
+                    class="collapse navbar-collapse"
+                    id="navbarSupportedContent"
+                  >
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                      <li class="nav-item">
+                        <a
+                          class="nav-link active"
+                          aria-current="page"
+                          href="#home"
+                          >Home</a
+                        >
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#about-me">About</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#my-skills">Skils</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#projects">Projects</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact Me</a>
+                      </li>
+
+                        <a href="./assets/Resume.pdf" target="_blank">
+                          <button
+                            type="button"
+                            class="btn bg-white btn-sm hire-me-button"
+                          >
+                            <i class="fa-solid fa-download"></i>Download CV
+                          </button>
+                        </a>
+                    </ul>
+                  </div>
+                </div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </header>
+
+      <section class="banner-section">
+        <div class="container">
+          <div class="row">
+            <div class="col-sm-12 col-md-10 col-lg-7">
+              <div class="banner-wrapper">
+                <p class="greet-text text-white">
+                  Hello 👋
+                  <!-- <i class="fa-solid fa-hand" style="color: yellow"></i> -->
+                </p>
+                <h1 class="banner-heading my-2">
+                  Hi, I'm <span style="color: #ed5026">Nakul Singh</span>
+                </h1>
+                <h1 class="banner-heading my-2">
+                  FrontEnd Developer <span style="font-size: 40px">💻</span>
+                </h1>
+                <p class="banner-desc text-white">
+                  Passionate full-stack developer with expertise in
+                  JavaScript-based technologies. With a blend of front-end and
+                  back-end proficiency, I specialize in crafting responsive,
+                  scalable web applications that delight users and meet business
+                  objectives.
+                </p>
+                <div class="social-icons d-flex align-items-center mt-3">
+                  <a href="https://github.com/nakul6686" traget="_blank">
+                    <span class="circle">
+                      <i class="fa-brands fa-github"></i>
+                    </span>
+                  </a>
+                  <a href="linkedin.com/in/nakul-singh-07b219193" target="_blank">
+                    <span class="circle">
+                      <i class="fa-brands fa-linkedin"></i>
+                    </span>
+                  </a>
+                  
+                  <span class="circle">
+                    <i class="fa-brands fa-twitter"></i>
+                  </span>
+                  <span class="circle">
+                    <i class="fa-brands fa-square-instagram"></i>
+                  </span>
+                </div>
+              </div>
+            </div>
+            <div
+              class="col-sm-12 col-md-2 col-lg-5 d-sm-none d-md-none d-lg-block"
+            >
+              <img
+                class="banner-img"
+                loading="lazy"
+                src="./assets/images/Code typing-amico.png"
+                alt=""
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+      <section>
+        <div class="banner-bottom py-3">
+          <div class="container">
+            <div class="row">
+              <div class="col-sm-12 col-lg-2 text-white">
+                <dir class="d-flex align-items-center">
+                  <h2 class="tiles-number d-flex align-items-center">
+                    4
+                    <span
+                      style="
+                        font-size: 24px;
+                        font-family: 'Poppins', sans-serif;
+                      "
+                      >+</span
+                    >
+                  </h2>
+                  <p class="tiles-desc">Year's of Experience</p>
+                </dir>
+              </div>
+              <div class="col-sm-12 col-lg-3 text-white">
+                <dir class="d-flex align-items-center">
+                  <h2 class="tiles-number d-flex align-items-center">
+                    6<span
+                      style="
+                        font-size: 24px;
+                        font-family: 'Poppins', sans-serif;
+                      "
+                      >+</span
+                    >
+                  </h2>
+                  <p class="tiles-desc">Projects completed around the world</p>
+                </dir>
+              </div>
+              <div class="col-sm-12 col-lg-7 text-white">
+                <div class="logo-wraper">
+                  <div class="logo-outer">
+                    <i class="fa-brands fa-html5"></i>
+                  </div>
+                  <div class="logo-outer">
+                    <i class="fa-brands fa-css3-alt"></i>
+                  </div>
+                  <div class="logo-outer">
+                    <i class="fa-brands fa-square-js"></i>
+                  </div>
+                  <div class="logo-outer">
+                    <i class="fa-brands fa-react"></i>
+                  </div>
+                  <div class="logo-outer">
+                    <i class="fa-brands fa-node-js"></i>
+                  </div>
+                  <div class="logo-outer">
+                    <img
+                      src="./assets/images/png-transparent-mongodb-original-wordmark-logo-icon-thumbnail-removebg-preview.png"
+                      alt=""
+                    />
+                  </div>
+                  <div class="logo-outer">
+                    <img
+                      src="./assets/images/png-clipart-jquery-logo-web-development-jquery-ui-javascript-computer-icons-jqlogo-emblem-label-removebg-preview.png"
+                      alt=""
+                    />
+                  </div>
+                  <div class="logo-outer">
+                    <img
+                      src="./assets/images/png-transparent-visual-studio-code-hd-logo-thumbnail-removebg-preview.png"
+                      alt=""
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="about-me" id="about-me">
+        <div class="container">
+          <div class="row">
+            <div class="col-12-12"></div>
+            <div class="col-sm-12 col-md-6 col-lg-6 padding-custom">
+              <img src="assets/images/about.png" class="w-100" alt="" />
+            </div>
+            <div class="col-sm-12 col-md-6 col-lg-6 padding-custom1">
+              <h2 class="section-heading">About Me</h2>
+              <p class="section-desc" style="font-size: 16px">
+                I possess more than four years of experience in the IT industry,
+                where I have developed front-end applications using HTML, CSS,
+                JavaScript, and their frameworks. Additionally, I have a solid
+                foundation in back-end technologies.
+              </p>
+              <p class="section-desc mt-1">
+                <mark style="background-color: #ffff00"
+                  >I am skilled at creating interfaces that are visually
+                  appealing and user-friendly as a front-end enthusiast.</mark
+                >
+              </p>
+
+              <p class="mt-1 section-desc">
+                <mark style="background-color: #ffff00"
+                  >Node.js, Express, and MongoDB are used to create Rest APIs as
+                  part of my backend expertise.</mark
+                >
+              </p>
+              <hr style="height: 1px; width: 100%; background-color: #ffffff" />
+              <ul class="contact-info mt-2 pl-0" style="padding-left: 0">
+                <li>
+                  <div class="d-flex align-items-center">
+                    <span class="icon-outer mr-2"
+                      ><i class="fa-solid fa-location-dot"></i>
+                    </span>
+                    <span>Gurugram Haryana, India</span>
+                  </div>
+                </li>
+                <li>
+                  <div class="d-flex align-items-center">
+                    <span class="icon-outer mr-2"
+                      ><i class="fa-solid fa-envelope"></i
+                    ></span>
+
+                    <span>css.nakul@gmail.com</span>
+                  </div>
+                </li>
+                <li>
+                  <div class="d-flex align-items-center">
+                    <span class="icon-outer mr-2"
+                      ><i class="fa-solid fa-phone"></i
+                    ></span>
+                    <span>+918899637434</span>
+                  </div>
+                </li>
+              </ul>
+              <div class="bottom-buttons">
+                <a href="./assets/Resume.pdf" target="_blank" style="color: unset;">
+                  <button type="button" class="btn bg-white btn-lg download-cv">
+                    <i class="fa-solid fa-download"></i>Download CV
+                  </button>
+                </a>
+                
+                <a href="#contact">
+                  <button type="button" class="btn btn-outline btn-lg hire-me">
+                    <i class="fa-solid fa-envelope"></i>Hire me
+                  </button>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="skills-section" id="my-skills">
+        <div class="container">
+          <div class="row">
+            <h2 class="section-heading mt-2">My Skills</h2>
+            <div class="col-sm-12 col-md-9 col-lg-9">
+              <div class="d-flex skill-cards position-relative flex-wrap">
+                <div class="cards text-center">
+                  <i class="fa-brands fa-html5" aria-hidden="true"></i>
+                  <h2 class="card-heading">HTML</h2>
+                  <p class="card-desc">Craeting structured web content</p>
+                </div>
+                <div class="cards text-center">
+                  <i class="fa-brands fa-css3-alt" aria-hidden="true"></i>
+                  <h2 class="card-heading">CSS</h2>
+                  <p class="card-desc">
+                    Styling and layout design with bootstrap
+                  </p>
+                </div>
+                <div class="cards text-center">
+                  <i class="fa-brands fa-square-js" aria-hidden="true"></i>
+                  <h2 class="card-heading">JavaScript</h2>
+                  <p class="card-desc">Adding Intractivity and functionality</p>
+                </div>
+                <div class="cards text-center">
+                  <i class="fa-brands fa-react" aria-hidden="true"></i>
+                  <h2 class="card-heading">React</h2>
+                  <p class="card-desc">Building modern web applications</p>
+                </div>
+                <div class="cards text-center">
+                  <img src="assets/images/next.png" alt="" />
+                  <h2 class="card-heading">Next.js</h2>
+                  <p class="card-desc">
+                    Building performant web apps with react
+                  </p>
+                </div>
+                <div class="cards text-center">
+                  <i class="fa-brands fa-node-js" aria-hidden="true"></i>
+                  <h2 class="card-heading">NodeJs</h2>
+                  <p class="card-desc">
+                    Creating backend and enabling creation of REST APIs.
+                  </p>
+                </div>
+                <div class="cards text-center">
+                  <img
+                    src="./assets/images/png-transparent-mongodb-original-wordmark-logo-icon-thumbnail-removebg-preview.png"
+                    alt=""
+                  />
+                  <h2 class="card-heading">MongoDb</h2>
+                  <p class="card-desc">
+                    NoSQL database for scalable REST API development.
+                  </p>
+                </div>
+
+                <div class="cards text-center">
+                  <img src="assets/images//typescript.svg" alt="" />
+                  <h2 class="card-heading">TypeScript</h2>
+                  <p class="card-desc">
+                    Superset of JavaScript for static typing and scalability
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-12 col-md-3 col-lg-3 padding-lg">
+              <h3 class="other-skills">Other Skills</h3>
+              <ul class="other-tools list-style-none pl-0">
+                <li>Responsive Web Design</li>
+                <li>Redux</li>
+                <li>Github</li>
+                <li>Bitbucket</li>
+                <li>Visual studio code</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="projects-section" id="projects">
+        <div class="container">
+          <h2 class="section-heading mt-2">My Projects</h2>
+          <p class="section-desc mb-2">
+            Things i have built or worked on so far.
+          </p>
+          <div class="row">
+            <div class="col-sm-12 flex-wrap d-flex">
+              <div class="projects-card">
+                <img src="https://images.pexels.com/photos/574071/pexels-photo-574071.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" class="w-100" alt="" />
+                <div class="px-2">
+                  <p class="project-name mt-3 mb-1">Lorem Ipsum is simple</p>
+                  <p class="project-desc mb-3">
+                    Lorem Ipsum is simply dummy text of the printing and
+                    typesetting industry.
+                  </p>
+                  <button
+                    type="button"
+                    class="btn btn-sm download-cv w-100 rounded github-link mt-3"
+                    disabled
+                  >
+                    <i class="fa-brands fa-github"></i>View Code
+                  </button>
+                </div>
+              </div>
+              <div class="projects-card">
+                <img src="https://images.pexels.com/photos/574071/pexels-photo-574071.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" class="w-100" alt="" />
+                <div class="px-2">
+                  <p class="project-name mt-3 mb-1">Lorem Ipsum is simple</p>
+                  <p class="project-desc mb-3">
+                    Lorem Ipsum is simply dummy text of the printing and
+                    typesetting industry.
+                  </p>
+                  <button
+                    type="button"
+                    class="btn btn-sm download-cv w-100 rounded github-link mt-3"
+                    disabled
+                  >
+                    <i class="fa-brands fa-github"></i>View Code
+                  </button>
+                </div>
+              </div>
+              <div class="projects-card">
+                <img src="https://images.pexels.com/photos/574071/pexels-photo-574071.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" class="w-100" alt="" />
+                <div class="px-2">
+                  <p class="project-name mt-3 mb-1">Lorem Ipsum is simple</p>
+                  <p class="project-desc mb-3">
+                    Lorem Ipsum is simply dummy text of the printing and
+                    typesetting industry.
+                  </p>
+                  <button
+                    type="button"
+                    class="btn btn-sm download-cv w-100 rounded github-link mt-3"
+                  >
+                    <i class="fa-brands fa-github"></i>View Code
+                  </button>
+                </div>
+              </div>
+              <div class="projects-card">
+                <img src="https://images.pexels.com/photos/574071/pexels-photo-574071.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" class="w-100" alt="" />
+                <div class="px-2">
+                  <p class="project-name mt-3 mb-1">Lorem Ipsum is simple</p>
+                  <p class="project-desc mb-3">
+                    Lorem Ipsum is simply dummy text of the printing and
+                    typesetting industry.
+                  </p>
+                  <button
+                    type="button"
+                    class="btn btn-sm download-cv w-100 rounded github-link mt-3"
+                  >
+                    <i class="fa-brands fa-github"></i>View Code
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="contact" class="contact-section">
+        <div class="container">
+          <div class="row">
+            <div class="col-sm-12 col-md-7 col-lg-7">
+              <p class="contact-heading">
+                Let’s discuss<br />
+                on something <span>cool</span> together
+              </p>
+              <p class="mt-5" style="font-size: 18px">I’m interested in...</p>
+              <div class="buttons">
+                <button class="btn btn-sm download-cv rounded github-link">
+                  Healthcare Applications
+                </button>
+                <button class="btn btn-outline btn-lg hire-me">
+                  Ecommerce Applications
+                </button>
+                <button class="btn btn-outline btn-lg hire-me">Insurance</button
+                ><br />
+                <button class="btn btn-outline btn-lg hire-me mt-2">
+                  Landing Pages
+                </button>
+                <button class="btn btn-outline btn-lg hire-me mt-2">
+                  Mobile Applications
+                </button>
+                <!-- Add more buttons as needed -->
+              </div>
+            </div>
+            <div class="col-sm-12 col-md-5 col-lg-5">
+              <form id="contact-form">
+                <input
+                  type="text"
+                  class="form-control"
+                  placeholder="Your name"
+                  name="name"
+                  required
+                  maxlength="20"
+                  minlength="6"
+                />
+                <input
+                  type="number"
+                  class="form-control"
+                  placeholder="Your number"
+                  required
+                  pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
+                  name="number"
+                />
+                <input
+                  type="email"
+                  class="form-control"
+                  placeholder="Your email"
+                  name="email"
+                  required
+                />
+                <textarea
+                  class="form-control"
+                  placeholder="Your message"
+                  rows="4"
+                  required
+                  minlength="50"
+                  maxlength="200"
+                  name="message"
+                ></textarea>
+                <button
+                  type="submit"
+                  class="btn btn-sm download-cv w-100 rounded github-link mt-4"
+                  id="submit-btn"
+                >
+                  <i class="fa-solid fa-paper-plane"></i> Submit
+                </button>
+              </form>
+              <!-- Font Awesome Icons -->
+
+              <div class="social-icons contact d-flex align-items-center mt-3">
+                <a href="https://github.com/nakul6686" traget="_blank">
+                  <span class="circle">
+                    <i class="fa-brands fa-github"></i>
+                  </span>
+                </a>
+                <a href="linkedin.com/in/nakul-singh-07b219193" target="_blank">
+                  <span class="circle">
+                    <i class="fa-brands fa-linkedin"></i>
+                  </span>
+                </a>
+                <span class="circle">
+                  <i class="fa-brands fa-twitter" aria-hidden="true"></i>
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <footer>
+        <div class="container">
+          <div class="row">
+            <div class="col-sm-12">
+              <p class="text-center text-sm text-white">
+                © 2024 Nakul Singh. All rights reserved. | Designed and
+                developed by <span style="color: #ed5026">Nakul singh</span>.
+              </p>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <script src="./assets/index.js"></script>
+  </body>
+</html>
