@@ -355,11 +355,21 @@ p {
 }
 .project-desc {
   font-size: 14px;
+  display: -webkit-box;
+-webkit-line-clamp: 3;
+-webkit-box-orient: vertical;
+overflow: hidden;
+text-overflow: ellipsis;
 }
 .github-link,
 .github-link:hover {
   background-color: #291c3a;
   color: #ffffff;
+}
+.github-link.btn-outline{
+  background-color: transparent !important;
+  color: #000000;
+  border-color: var(--bs-btn-active-border-color);
 }
 .contact-section {
   background-color: #decfed;
